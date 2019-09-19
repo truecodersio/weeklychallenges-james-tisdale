@@ -29,7 +29,7 @@ namespace ChallengesWithTestsMark8
             throw new NotImplementedException();
         }
 
-        public bool IsStringANumber(string input)
+        public bool IsStringANumber(string input) // .tryParse??
         {
             throw new NotImplementedException();
         }
