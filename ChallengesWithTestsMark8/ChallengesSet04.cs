@@ -32,24 +32,28 @@ namespace ChallengesWithTestsMark8
             {
                 return str1.Length;
             }
+
             if(str2.Length <= str1.Length
                 && str2.Length <= str3.Length
                 && str2.Length <= str4.Length)
             {
                 return str2.Length;
             }
+
             if(str3.Length <= str1.Length
                 && str3.Length <= str2.Length
                 && str3.Length <= str4.Length)
             {
                 return str3.Length;
             }
+
             if(str4.Length <= str1.Length
                 && str4.Length <= str2.Length
                 && str4.Length <= str3.Length)
             {
                 return str4.Length;
             }
+
             return 0;
 
         }
@@ -60,18 +64,22 @@ namespace ChallengesWithTestsMark8
             {
                 return number1;
             }
+
             if (number2 <= number1 && number2 <= number3 && number2 <= number4)
             {
                 return number2;
             }
+
             if (number3 <= number1 && number3 <= number2 && number3 <= number4)
             {
                 return number3;
             }
+
             if (number4 <= number1 && number4 <= number2 && number4 <= number3)
             {
                 return number4;
             }
+
             return 0;
         }
 
@@ -88,14 +96,15 @@ namespace ChallengesWithTestsMark8
             {
                 return false;
             }
+
             return true;
         }
 
         public bool IsStringANumber(string input) // .tryParse??
         {
             
-            bool result = Double.TryParse(input, out var output);
-            return result;
+            return Double.TryParse(input, out var output);
+            
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
@@ -108,15 +117,18 @@ namespace ChallengesWithTestsMark8
                 {
                     nullCount++;
                 }
+
                 else
                 {
                     nonNullCount++;
                 }
             }
+
             if(nullCount > nonNullCount)
             {
                 return true;
             }
+
             return false;
         }
 
@@ -126,6 +138,7 @@ namespace ChallengesWithTestsMark8
             {
                 return 0;
             }
+
             double j = 0;
             double average = 0;
             List<int> listEvens = new List<int>();
@@ -155,6 +168,7 @@ namespace ChallengesWithTestsMark8
             {
                 throw new ArgumentOutOfRangeException();
             }
+
             int answer = 1;
             for (int i = 1; i <= number; i++)
             {
